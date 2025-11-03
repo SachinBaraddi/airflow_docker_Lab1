@@ -1,0 +1,21 @@
+[2025-11-03T20:10:15.039+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-03T20:10:15.046+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Airflow_Lab1.load_model_task manual__2025-11-03T20:10:09.073394+00:00 [queued]>
+[2025-11-03T20:10:15.048+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Airflow_Lab1.load_model_task manual__2025-11-03T20:10:09.073394+00:00 [queued]>
+[2025-11-03T20:10:15.048+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-03T20:10:15.052+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_model_task> on 2025-11-03 20:10:09.073394+00:00
+[2025-11-03T20:10:15.055+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=159) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-03T20:10:15.055+0000] {standard_task_runner.py:63} INFO - Started process 168 to run task
+[2025-11-03T20:10:15.055+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Airflow_Lab1', 'load_model_task', 'manual__2025-11-03T20:10:09.073394+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmpa7olyu18']
+[2025-11-03T20:10:15.056+0000] {standard_task_runner.py:91} INFO - Job 46: Subtask load_model_task
+[2025-11-03T20:10:15.070+0000] {task_command.py:426} INFO - Running <TaskInstance: Airflow_Lab1.load_model_task manual__2025-11-03T20:10:09.073394+00:00 [running]> on host 58eea27abbb8
+[2025-11-03T20:10:15.099+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='your_name' AIRFLOW_CTX_DAG_ID='Airflow_Lab1' AIRFLOW_CTX_TASK_ID='load_model_task' AIRFLOW_CTX_EXECUTION_DATE='2025-11-03T20:10:09.073394+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-03T20:10:09.073394+00:00'
+[2025-11-03T20:10:15.099+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-03T20:10:15.107+0000] {logging_mixin.py:188} INFO - Optimal no. of clusters: 4
+[2025-11-03T20:10:15.118+0000] {python.py:237} INFO - Done. Returned value was: 24
+[2025-11-03T20:10:15.121+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-03T20:10:15.157+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Airflow_Lab1, task_id=load_model_task, run_id=manual__2025-11-03T20:10:09.073394+00:00, execution_date=20251103T201009, start_date=20251103T201015, end_date=20251103T201015
+[2025-11-03T20:10:15.198+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-11-03T20:10:15.203+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-03T20:10:15.204+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
